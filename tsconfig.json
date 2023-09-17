@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "rootDir": "src",
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "target": "ES2021",
+    "moduleResolution": "nodenext",
+    "outDir": "dist",
+    "incremental": false,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": false,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["src/**/*.ts", "@types/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

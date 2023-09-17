@@ -1,0 +1,25 @@
+{
+  "name": "swc-issue-reproduction",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build-swc": "yarn clear && swc src -d dist --config-file .swcrc",
+    "build-tsc": "yarn clear && tsc --project tsconfig.json",
+    "start": "node ./dist/index.js",
+    "clear": "rimraf dist"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.2",
+    "core-js": "^3.32.2",
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.85",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.2.2"
+  }
+}

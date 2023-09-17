@@ -1,0 +1,28 @@
+{
+  "exclude": "node_modules/**/*",
+  "env": {
+    "targets": "node >= 18.14",
+    "coreJs": "3.32.1",
+    "dynamicImport": true,
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": false,
+    },
+    "transform": {
+      "decoratorVersion": "2022-03",
+    },
+    "externalHelpers": true,
+    "keepClassNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/exceptions/*": ["src/exceptions/*"],
+      "@/utils/*": ["src/utils/*"]
+    }
+  },
+  "minify": false,
+  "sourceMaps": true,
+}
